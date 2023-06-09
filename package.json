@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "build:start": "dotenv -e .env.test react-scripts start",
+    "build:test": "dotenv -e .env.test react-scripts build"
   },
   "dependencies": {
     "axios": "^0.27.2",
@@ -26,5 +28,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "dotenv-cli": "^7.2.1"
   }
 }
